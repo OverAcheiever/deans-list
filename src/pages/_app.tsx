@@ -18,9 +18,12 @@ const space = Space_Grotesk({
   variable: "--font-space",
 });
 
+import { Toaster } from "react-hot-toast";
+
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <main className={`${tt.variable} ${space.variable}`}>
+      <Toaster />
       <WalletProvider>
         <Component {...pageProps} />
       </WalletProvider>

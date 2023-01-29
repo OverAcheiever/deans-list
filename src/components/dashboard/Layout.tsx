@@ -9,13 +9,13 @@ const Layout = ({ children }: { children: ReactNode }) => {
   const { publicKey } = useWallet();
 
   return (
-    <div className="relative flex h-screen w-full flex-col bg-black text-white">
+    <div className="relative flex min-h-screen w-full flex-col bg-black text-white">
       <div className="flex h-20 w-full items-center justify-between border-b border-[#111] px-8 font-tt text-3xl">
         DEAN&apos;S LIST
         <Link href="/dashboard/create">
-          <button className="h-10 rounded bg-white px-5 font-space text-lg font-bold text-black">
+          {/* <button className="h-10 rounded bg-white px-5 font-space text-lg font-bold text-black">
             create
-          </button>
+          </button> */}
         </Link>
       </div>
       {!publicKey ? (

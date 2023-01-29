@@ -1,11 +1,11 @@
 import { clusterApiUrl, Connection, PublicKey } from "@solana/web3.js";
 
-const DEAN_BONDING = new PublicKey(
-  "9ERkrMD8gq8PQBABazpziNytJKrxVgyoxd5uEzAqsTc6"
-);
-const DEAN_MINT = new PublicKey("6LyW1iUpfTPiMxSLMpKCxeAqXDz7nuWCfCNnEaSmibZ1");
-
-const endpoint = clusterApiUrl("mainnet-beta");
+const endpoint = clusterApiUrl("devnet");
 const connection = new Connection(endpoint, "confirmed");
 
-export { DEAN_BONDING, DEAN_MINT, endpoint, connection };
+const USDC_MINT = new PublicKey("Gh9ZwEmdLJ8DscKNTkTqPbNwLNNBjuSzaG9Vp2KGtKJr");
+const TREASURY_MINT = new PublicKey(
+  "AQiszckBeysWtwZ5YN9pMy1dDTs4jLMHxwui743ubGj2"
+);
+
+export { endpoint, connection, USDC_MINT, TREASURY_MINT };
